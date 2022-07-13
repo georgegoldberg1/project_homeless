@@ -1,0 +1,23 @@
+#requirements python310
+
+jupyter
+
+numpy
+pandas
+
+matplotlib
+seaborn
+plotly
+
+scikit-learn
+
+statsmodels
+
+requests
+beautifulsoup4
+
+xlrd
+xlsxwriter
+
+pyarrow
+fastparquet
