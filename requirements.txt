@@ -21,3 +21,6 @@ xlsxwriter
 
 pyarrow
 fastparquet
+
+# for ingesting the gov .odf excel files
+odfpy

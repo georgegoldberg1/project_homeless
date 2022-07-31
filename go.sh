@@ -8,20 +8,20 @@ docker stop homeless_project
 
 #build the custom docker image
 docker build \
-	--tag py310:latest \
-	--label py310 \
+	--tag py310_proj_hom:latest \
+	--label py310_proj_hom \
 	--build-arg HOSTUSER="$(whoami)" \
 	.
 
 #remove old builds if they exist
-docker image prune --force --filter='label=py310'
+docker image prune --force --filter='label=py310_proj_hom'
 
 #start the container + jupyter
 docker run --rm -d \
 	--publish $port_to_run:8888 \
         --name homeless_project \
         -v "$(pwd)":"/home/$(whoami)/hostmachine" \
-        py310
+        py310_proj_hom
 
 # Initial browser window in order to generate token + cookie. Increase 2nd sleep if needed.
 sleep 1
