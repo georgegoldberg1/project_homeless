@@ -17,6 +17,7 @@ requests
 beautifulsoup4
 
 xlrd
+openpyxl
 xlsxwriter
 
 pyarrow
